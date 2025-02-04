@@ -4,6 +4,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+ALLOW_MISSING_DEPENDENCIES := true
+TARGET_DISABLE_EPPE := true
+BUILD_BROKEN_DUP_RULES := true
+DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
+
 # Inherit from sdm660-common
 include device/asus/sdm660-common/BoardConfigCommon.mk
 
