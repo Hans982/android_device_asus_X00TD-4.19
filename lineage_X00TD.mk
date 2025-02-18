@@ -9,16 +9,14 @@ TARGET_DISABLE_EPPE := true
 BUILD_BROKEN_DUP_RULES := true
 DISABLE_ARTIFACT_PATH_REQUIREMENTS := true
 
-# To include Gapps 
+MISTOS_MAINTAINER=Hans982
+TARGET_ENABLE_BLUR := false
+PRODUCT_NO_CAMERA := false
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
 WITH_GMS := false
-
-# To Build Pixel launcher
-TARGET_INCLUDE_NEXUS := true
-
-#Some more GMS Flag
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_INCLUDE_STOCK_ARCORE := false
-TARGET_INCLUDE_STOCK_AICORE := false
+TARGET_DEFAULT_PIXEL_LAUNCHER := false
+TARGET_HAS_UDFPS := false
+EXTRA_UDFPS_ANIMATIONS := false
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
